@@ -3,7 +3,9 @@ dark sea green (163, 184, 151);
 turkish rose 
 indgo
 pastel (181, 168, 224)
+second light blue rgb (87, 135, 181)
 ash grey rgb(149,149,149) */
+
 
 /* style for main content */
 
@@ -18,7 +20,7 @@ p {
 }
 
 body {
-  background-color: rgb(163, 184, 151);
+  background-color: rgb(67, 103, 153);
 }
 
 img {
