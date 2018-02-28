@@ -1,6 +1,8 @@
-# Friend-Finder
+# Hob-baes 
 
-# Friend-Finder is a dating application that is full stack. 
+# Hob-baes is a dating application that is full stack. 
+
+# Our motto: Shared hobbies first, pix second.
 
 ##  Why we're different 
 
@@ -9,12 +11,15 @@
 
 ###     Research shows that social media usage can cause people to feel lonley, anxious, or left out; these are commonly referred to as fear of missing out (FOMO) and we all know fake news can cause anxiety too. 
 
-####A study by the University of Pittsburgh asserts that there is a positive correlation between spending time on social media and feeling lonely. http://www.independent.co.uk/life-style/social-media-high-usage-more-isolated-lonely-people-study-university-pittsburgh-a7614226.html
+####    A study by the University of Pittsburgh asserts that there is a positive correlation between spending time on social media and feeling lonely. http://www.independent.co.uk/life-style/social-media-high-usage-more-isolated-lonely-people-study-university-pittsburgh-a7614226.html
 
 #### So, we'd like people to use our app and meet in real life and not be lonely.
 
 
 ### picture of flowchart goes HERE 
+
+
+### picture of the super cool UI goes here - emphasize the hobbies over profile pics concept 
 
 #### This app was inspired by:
 * Millenials

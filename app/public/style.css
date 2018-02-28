@@ -9,31 +9,35 @@ ash grey rgb(149,149,149) */
 
 /* style for main content */
 
-html {
-  background: url(mohamed-nohassi-223475-unsplash.jpg) repeat;
-  background-size: cover;
-  
-}
-h1 {
-  color: rgb(255, 255, 255);
+
+h1, p {
+  color: rgb(255, 255, 255);  
   font-family: "Montserrat", sans-serif;
+  z-index: 100;
 }
 
-p {
-  color: rgb(255, 255, 255);
-  font-family: "Montserrat", sans-serif;
-}
 
 body {
-  background-color: rgb(177, 112, 134);
+ background: url(mohamed-nohassi-223475-unsplash.jpg) repeat;
+ background-size: cover;
+ 
 }
+
 /* 
 img {
   width: 100%;
   border: none;
 } */
 
-button {
-  background-color: transparent;
+.btn  {
+background-color: Transparent;
  margin-left: 40%;
+ border-radius: 4px;
+ float:right;
+ border: none;
+ color: rgb(255,255,255);
+}
+
+.intro {
+  float: left;
 }
