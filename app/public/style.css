@@ -17,12 +17,10 @@ h1, p {
 }
 
 
-body {
- background: url(mohamed-nohassi-223475-unsplash.jpg) repeat;
- background-size: cover;
- 
-}
 
+body {
+  background-color: rgb(117, 112, 134);
+}
 /* 
 img {
   width: 100%;
