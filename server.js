@@ -18,7 +18,8 @@ app.use(bodyParser.json())
 //  loading the CSS files... need to express.static 
 // app.use(express.static(__dirname + '/public'));
 // app.use(express.static("public"));
-app.use( express.static(path.join(__dirname, '/public')))
+// app.use( express.static(path.join(__dirname, '/public')))
+app.use(express.static('app/public'));
 
 //  call the exported functions here
 

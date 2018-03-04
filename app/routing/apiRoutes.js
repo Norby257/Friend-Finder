@@ -11,7 +11,6 @@ module.exports = function(app) {
 // app.post("api/friends", function(req, res){
 //     "name": name,
 //     "picture": picture,
-//     "scores": scores
 
 // }, function(res, data){
 //     if (err) throw err;

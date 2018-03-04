@@ -15,21 +15,38 @@ $(document).ready(function() {
       `An ideal saturday morning is binge watching Game of Thrones`,
       `An ideal saturday morning is a sunny day at the beach`
     ],
-divClass = 'form-group',
-labelFor ='exampleFormControlSelect1',
-selectClass = 'form-control',
-selectId = 'exampleFormControlSelect1';
+    divClass = "form-group",
+    labelFor = "exampleFormControlSelect1",
+    selectClass = "form-control",
+    selectId = "exampleFormControlSelect1"
 
-  console.log(surveyQuestions);
+  console.log(surveyQuestions)
 
-  //for loop - question and question number are done - just thinking of ways to append the select option 
+  //for loop - question and question number are done - just thinking of ways to append the select option
   for (var i = 0, x = surveyQuestions.length; i < x; i++) {
     questions++
     $("form").append(`<h3> Question ${questions}`)
     $("form").append(`<h4> ${surveyQuestions[i]}`)
-    $('<div>').addClass(divClass);
+    $("<div>").addClass(divClass)
   }
 
-  //    add a submit button and the corresponding submit event 
-  
+  //  add a submit button and the corresponding submit event
+  $("button").on("click", function(e) {
+    e.preventDefault()
+
+    var userdata = {
+      name: $("#name").val(),
+      picture: $("picture-link").val()
+    }
+    console.log(userdata)
+    // post request which needs to be fixed
+    $.post("/api/friends", userdata, function(data) {
+      $("#name").val("")
+      $("#picture-link").val("")
+    })
+    $.post("/api/friends", userdata, function(data) {
+      $("#name").val("")
+      $("#picture-link").val("")
+    })
+  })
 })
