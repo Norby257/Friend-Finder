@@ -33,10 +33,16 @@ $(document).ready(function() {
   //  add a submit button and the corresponding submit event
   $("button").on("click", function(e) {
     e.preventDefault()
-    // post request which needs to be fixed
-    $.post("api/friends", userdata, function(data) {
-      $("#name").val()
-      $("#picture-link").val()
+    var userdata = {
+      name: $("#name").val(),
+      picture: $("#picture-link").val()
+  };
+  console.log(userdata);
+
+    $.post("/api/friends", userdata, function(data) {
+      //  clear the form once all have been submitted 
+      $("#name").val("");
+      $("#picture-link").val("");
     })
    
   })

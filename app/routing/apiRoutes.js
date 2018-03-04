@@ -9,16 +9,13 @@ module.exports = function(app) {
   })
 
 app.post("/api/friends", function(req, res){
-  var friends = [];
-  var friend  = {
-    "name": "name",
-    "picture": "picture",
-    "scores": "[]"
-  };
-  friends.push(friend);
-  console.log(friends);
-    
-
+  friends.push(req.body);
+  console.log(req.body);
+  var newUser = {
+    name: req.body.name,
+    picture: req.body.picture
+  }
+  res.json(newUser);
 }, function(res, data){
     if (err) throw err;
    res.send(data);
