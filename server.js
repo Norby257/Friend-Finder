@@ -15,6 +15,11 @@ var PORT = process.env.PORT || 3000
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
+//  loading the CSS files... need to express.static 
+// app.use(express.static(__dirname + '/public'));
+// app.use(express.static("public"));
+app.use( express.static(path.join(__dirname, '/public')))
+
 //  call the exported functions here
 
 htmlRoutes(app)
