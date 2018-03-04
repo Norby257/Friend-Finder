@@ -17,7 +17,8 @@ $(document).ready(function() {
     `An ideal saturday morning is binge watching Game of Thrones`,
     `An ideal saturday morning is a sunny day at the beach`,
     `You prefer outdoor adventure activities`
-  ])
+  ]),
+  scores = [];
 
   console.log(surveyQuestions)
 
@@ -36,25 +37,36 @@ $(document).ready(function() {
     $("select").append($("<option>", 
   {
     value: options[j],
-    text: "Option " +  j
+    text:  j
   }));
  }
 
-//  $("form").append($("<button>")).addClass("btn btn-primary").text("Submit");
+ // event handler that adds score to score array when a value is selected 
+ $("select").on("change", function() {
+   scores.push(this.value);
+   console.log(scores);
+ });
+
   //  add a submit button and the corresponding submit event
   $("button").on("click", function(e) {
     e.preventDefault()
     var userdata = {
       name: $("#name").val(),
-      picture: $("#picture-link").val()
+      picture: $("#picture-link").val(),
+      score: scores
     }
     console.log(userdata)
+
+    //  convert option values into integer 
+      var scoresInt = scores.map(Number);
+      console.log(scoresInt);
+   
     // $("#myModal").modal('show');
 
-    $.post("/api/friends", userdata, function(data) {
-      //  clear the form once all have been submitted
-      $("#name").val("")
-      $("#picture-link").val("")
-    })
+    // $.post("/api/friends", userdata, function(data) {
+    //   //  clear the form once all have been submitted
+    //   $("#name").val("")
+    //   $("#picture-link").val("")
+    // })
   })
 })
