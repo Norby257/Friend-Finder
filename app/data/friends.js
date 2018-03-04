@@ -1,4 +1,3 @@
-
 friends = [
   {
     name: "Nora",
@@ -7,6 +6,4 @@ friends = [
   }
 ]
 
-
-module.exports = friends;
-
+module.exports = friends
