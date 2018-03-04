@@ -16,6 +16,7 @@ app.post("/api/friends", function(req, res){
     "scores": "[]"
   };
   friends.push(friend);
+  console.log(friends);
     
 
 }, function(res, data){
