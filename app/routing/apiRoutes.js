@@ -8,13 +8,19 @@ module.exports = function(app) {
     res.send(data);
   })
 
-// app.post("api/friends", function(req, res){
-//     "name": name,
-//     "picture": picture,
+app.post("/api/friends", function(req, res){
+  var friends = [];
+  var friend  = {
+    "name": "name",
+    "picture": "picture",
+    "scores": "[]"
+  };
+  friends.push(friend);
+    
 
-// }, function(res, data){
-//     if (err) throw err;
-//    res.send(data);
-// })
+}, function(res, data){
+    if (err) throw err;
+   res.send(data);
+})
 }
 

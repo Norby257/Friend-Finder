@@ -40,7 +40,7 @@ $(document).ready(function() {
     }
     console.log(userdata)
     // post request which needs to be fixed
-    $.post("/api/friends", userdata, function(data) {
+    $.post("api/friends", userdata, function(data) {
       $("#name").val("")
       $("#picture-link").val("")
     })
