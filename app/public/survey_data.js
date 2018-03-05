@@ -2,7 +2,6 @@
 console.log("we are linked")
 
 $(document).ready(function() {
-  
   // array of questions
   var questions = 0,
     options = 0
@@ -18,34 +17,35 @@ $(document).ready(function() {
     `An ideal saturday morning is a sunny day at the beach`,
     `You prefer outdoor adventure activities`
   ]),
-  scores = [];
+    (scores = [])
 
   console.log(surveyQuestions)
 
-  //  hiding modal so we only show it when submit button is clicked 
+  //  hiding modal so we only show it when submit button is clicked
   // $("#myModal").modal('hide');
 
-  //for loop - question and question number are done - just thinking of ways to append the select option
+  //for loop - question and question number
   for (var i = 0, x = surveyQuestions.length; i < x; i++) {
     questions++
     $("form").append(`<h3> Question ${questions}`)
     $("form").append(`<h4> ${surveyQuestions[i]}`)
-    $("form").append("<select>");
+    $("form").append("<select>")
+  }
+  //  for loop - option selectors
+  for (var j = 1; j < 6; j++) {
+    $("select").append(
+      $("<option>", {
+        value: options[j],
+        text: j
+      })
+    )
   }
 
-  for (var j = 1; j < 6; j++) {
-    $("select").append($("<option>", 
-  {
-    value: options[j],
-    text:  j
-  }));
- }
-
- // event handler that adds score to score array when a value is selected 
- $("select").on("change", function() {
-   scores.push(this.value);
-   console.log(scores);
- });
+  // event handler that adds score to score array when a value is selected
+  $("select").on("change", function() {
+    scores.push(this.value)
+    console.log(scores)
+  })
 
   //  add a submit button and the corresponding submit event
   $("button").on("click", function(e) {
@@ -53,20 +53,17 @@ $(document).ready(function() {
     var userdata = {
       name: $("#name").val(),
       picture: $("#picture-link").val(),
-      score: scores
+      scores: scores.map(Number)
     }
     console.log(userdata)
 
-    //  convert option values into integer 
-      var scoresInt = scores.map(Number);
-      console.log(scoresInt);
-   
-    // $("#myModal").modal('show');
+    $.post("/api/friends", userdata, function(data) {
+      //  create a dialog box
+      // $("<div class=dialog>".append($("<h4> Match!")).append($("<h4> Name")).append($("<h4> picture"));
 
-    // $.post("/api/friends", userdata, function(data) {
-    //   //  clear the form once all have been submitted
-    //   $("#name").val("")
-    //   $("#picture-link").val("")
-    // })
+      //  clear the form once all have been submitted
+      $("#name").val("")
+      $("#picture-link").val("")
+    })
   })
 })
