@@ -2,7 +2,7 @@
 
 # Hob-baes is a dating application that is full stack. 
 
-# Our motto: Shared hobbies first, pix second.
+# Our motto: Shared hobbies first.
 
 ##  Why we're different 
 
@@ -15,11 +15,6 @@
 
 #### So, we'd like people to use our app and meet in real life and not be lonely.
 
-
-### picture of flowchart goes HERE 
-
-
-### picture of the super cool UI goes here - emphasize the hobbies over profile pics concept 
 
 #### This app was inspired by:
 * Millenials
