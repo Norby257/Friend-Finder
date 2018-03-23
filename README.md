@@ -12,6 +12,9 @@ Our goal is to help you meet people. Whether you are watching Netflix, or watchi
  
  We believe in using our tech powers for good, and helping our target audience (users aged 25-35) make connections based on shared hobbies and interests. In today's fast paced, high-tech world, it can be tricky to find friends, meet people etc. We believe in having an inclusive audience. 
 
+![Initial Start Screen] (/public/initial_start_screen.png)
+
+
 
 ####    Research shows that social media usage can cause people to feel lonley, anxious, or left out; these are commonly referred to as fear of missing out (FOMO) and we all know fake news can cause anxiety too. 
 
@@ -32,3 +35,5 @@ Our goal is to help you meet people. Whether you are watching Netflix, or watchi
 * Ice-breakers so that meeting In real life  is not awkward 
 * The option of 'group hang' which is like meetup but cooler
 * Including LGBT audience and spaces 
+* Creating a secure login option using passport JS
+
