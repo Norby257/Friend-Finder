@@ -38,7 +38,3 @@ Our goal is to help you meet people. Whether you are watching Netflix, or watchi
 * The option of 'group hang' which is like meetup but cooler
 * Including LGBT audience and spaces 
 * Creating a secure login option using passport JS
-
-![home screen] (./initial_screen_one.png)
-
-![testimonials] (./initial_screen_two.png)
