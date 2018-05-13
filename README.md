@@ -12,7 +12,9 @@ Our goal is to help you meet people. Whether you are watching Netflix, or watchi
  
  We believe in using our tech powers for good, and helping our target audience (users aged 25-35) make connections based on shared hobbies and interests. In today's fast paced, high-tech world, it can be tricky to find friends, meet people etc. We believe in having an inclusive audience. 
 
-![Initial Start Screen] (/public/intial_start_screen.png)
+ Check out our site here: https://secret-gorge-46550.herokuapp.com/
+
+
 
 
 
