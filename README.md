@@ -39,6 +39,6 @@ Our goal is to help you meet people. Whether you are watching Netflix, or watchi
 * Including LGBT audience and spaces 
 * Creating a secure login option using passport JS
 
-![home screen] (/initial_screen_one.png)
+![home screen] (./initial_screen_one.png)
 
-![testimonials] (/initial_screen_two.png)
+![testimonials] (./initial_screen_two.png)
